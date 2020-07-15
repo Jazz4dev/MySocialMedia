@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    z-index: 10;   
+}
+a {
+    text-decoration: none;
+    width: 190px;
+    background: #8d54e7;
+    color: aliceblue;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 15px;
+    padding: 5px;
+    transform: translateX(-153px);
+    -webkit-transform: translateX(-153px);
+    -ms-transform: translateX(-153px);
+    transition:all 0.5s linear;
+    -webkit-transform: all 0.5s linear;
+    -ms-transform:all  0.5s linear;
+}
+ a i {
+     padding-left: 20px;
+     font-size: 30px !important;
+     animation: letszoom 3s linear alternate-reverse infinite;
+
+ }
+ @keyframes letszoom {
+     from{
+         transform: scale(0.8);
+     }
+     to {
+         transform: scale(1);
+     }
+ }
+ a:hover {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+ }
+ .whatsApp {
+    background: #25d366 ;
+ }
+ .twitter {
+     background: #1da1f2 ;
+}
+.instagram {
+     background: #c32aa3;
+}
+.linkedin {
+     background: #007bb5;
+} 
+.github {
+    background: black;
+}
+.nav-header {
+   text-align: center;
+   font-size: x-large;
+   color: rgb(150, 207, 51) ;
+   text-decoration: lightyellow;
+  
+   
+}
+img {
+    height: 50%;
+    width: 50%;
+    position: relative;
+    left: 25%;
+}
